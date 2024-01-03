@@ -4,66 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <title>Create Product</title>
+    
     <!-- Boostrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="">
-        <form action="" class="form-control container-fluid">
+        <form action="" class="form-control container">
 
             <div>
-                <h1 class="btn-dark text-center">Enter Details</h1>
+                <h1 class="btn-info text-center">Create Product</h1>
             </div>
 
-            <a href="index.html">Back to Home</a>
+            <a href="index.html">Back to Details</a>
 
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                <input type="text" class="form-control" name="name" id="name" placeholder="Name" required>
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="description">Description</label>
                 <input type="text" class="form-control" name="description" id="description" placeholder="Description">
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="price">Price</label>
-                <input type="number" class="form-control" name="price" id="price" placeholder="Price">
+                <input type="number" class="form-control" name="price" id="price" placeholder="Price" required>
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="quantity">Quantity</label>
-                <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Quantity">
+                <input type="number" class="form-control" name="quantity" id="quantity" placeholder="Quantity" required>
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="category">Category</label>
-                <input type="text" class="form-control" name="category" id="category" placeholder="Category">
+                <select name="category" id="category" required>
+                    <option value="Bothing Soap">Bothing Soap</option>
+                    <option value="Bothing Soap">Washing Soap</option>
+                    <option value="Bothing Soap">Face Wash Soap</option>
+                </select>
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-4">
                 <label for="image">Image</label>
                 <input type="file"  name="image" id="image">
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="sku">SKU</label>
                 <input type="text" class="form-control" name="sku" id="sku" placeholder="SKU">
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="brand">Brand</label>
-                <input type="text" class="form-control" name="brand" id="brand" placeholder="Brand">
+                <input type="text" class="form-control" name="brand" id="brand" placeholder="Brand" required> 
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="tax">Tax</label>
-                <input type="text" class="form-control" name="tax" id="tax" placeholder="Tax">
+                <select name="tax" id="tax" required>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="40">40</option>
+                </select>
             </div>
-            <div class="col col-8">
+            <div class="col col-8 mt-3">
                 <label for="notes">Notes</label>
                 <textarea name="notes" class="form-control" id="notes" cols="20" rows="5" placeholder="Notes"></textarea>
             </div><br>
             <div>
-                <button type="button" class="btn btn-primary">Submit</button>
+               <a href="index.html"><button type="button" class="btn btn-primary">Create</button></a> 
             </div>
         </form>
-
     </div>
     <!-- Javascript link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
