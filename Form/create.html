@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create the event management system</title>
+</head>
+
+<body>
+    <div>
+        <h3>Create the Event</h3>
+        <a href="index.html">Back</a><br><br>
+        <form>
+            <div>
+                <label for="eventName">Event Name</label><br>
+                <input type="text" id="eventName" name="EventName" placeholder="Enter the EventName">
+            </div><br>
+            <div>
+                <label for="dateTime">Date & Time</label><br>
+                <input type="datetime-local" id="dateTime" name="dateimeT" placeholder="Enter the DateTime">
+            </div><br>
+            <div>
+                <label for="location">Location</label><br>
+                <input type="text" id="location" name="location" placeholder="Enter the Location">
+            </div><br>
+            <div>
+                <label for="description">Description</label><br>
+                <textarea name="description" id="description" cols="20" rows="5"
+                    placeholder="Enter the Description"></textarea>
+            </div><br>
+            <div>
+                <label for="organizerContact">Organizer Contact</label><br>
+                <input type="tel" id="organizerContact" name="organizerContact" placeholder="Enter the OrganizerContact"
+                    maxlength="10">
+            </div><br>
+            <div>
+                <label for="ticketPrice">Ticket Price</label><br>
+                <input type="radio" name="ticketPrice" id="ticketPrice" value="1000">
+                <label for="ticketPrice">1000 1st Class</label><br>
+                <input type="radio" name="ticketPrice" id="ticketPrice" value="750">
+                <label for="ticketPrice">750 2nd Class</label><br>
+                <input type="radio" name="ticketPrice" id="ticketPrice" value="500">
+                <label for="ticketPrice">500 3rd Class</label><br>
+                <input type="radio" name="ticketPrice" id="ticketPrice" value="250">
+                <label for="ticketPrice">250 Normal</label><br>
+            </div><br>
+            <div>
+                <label for="eventType">Event Type</label><br>
+                <select name="eventType" id="eventType">
+                    <option value="Festivals">Festivals</option>
+                    <option value="Corporate Events">Corporate Events</option>
+                    <option value="Parties">Parties</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="maximumAttendees">Maximum Attendees</label><br>
+                <input type="number" id="maximumAttendees" name="maximumAttendees" min="1" max="100">
+            </div><br>
+            <div>
+                <label for="eventWebsite">Event Website</label><br>
+                <input type="url" id="eventWebsite" name="eventWebsite">
+            </div><br>
+            <div>
+                <label for="eventImageURL">Event Image URL's</label><br>
+                <a href=""><img src="" alt="FestivalEvent images"></a><br>
+                <a href=""><img src="" alt="CorporateEvent images "></a><br>
+                <a href=""><img src="" alt="Parties images"></a>
+            </div><br>
+            <div>
+                <label for="eventTags">Event Tags</label><br>
+                <select name="eventTags" id="eventTags">
+                    <option value="Dancing">Dancing</option>
+                    <option value="Singing">Singing</option>
+                    <option value="Music">Music</option>
+                </select>
+            </div><br>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
