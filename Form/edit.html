@@ -4,79 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit the event management system</title>
+    <title>Edit event</title>
 </head>
 
 <body>
     <div>
         <h3>Edit the Event</h3>
         <a href="index.html">Back</a><br><br>
-        <form>
+        <form action="/update.html" method="get">
             <div>
-                <label for="eventName">Event Name</label><br>
-                <input type="text" id="eventName" name="EventName" placeholder="Enter the EventName">
+                <label for="event-name">Event Name</label><br>
+                <input type="text" id="event-name" name="event_name" placeholder="Enter the event name"
+                    value="World Music Week 2024">
             </div><br>
             <div>
-                <label for="dateTime">Date & Time</label><br>
-                <input type="datetime-local" id="dateTime" name="dateimeT" placeholder="Enter the DateTime">
+                <label for="date-time">Date & Time</label><br>
+                <input type="datetime-local" id="date-time" name="date_time" value="2024-01-20T18:30">
             </div><br>
             <div>
                 <label for="location">Location</label><br>
-                <input type="text" id="location" name="location" placeholder="Enter the Location">
+                <input type="text" id="location" name="location" placeholder="Enter the location" value="Kochi">
             </div><br>
             <div>
                 <label for="description">Description</label><br>
                 <textarea name="description" id="description" cols="20" rows="5"
-                    placeholder="Enter the Description"></textarea>
+                    placeholder="Enter the Description">World Music Week</textarea>
             </div><br>
             <div>
-                <label for="organizerContact">Organizer Contact</label><br>
-                <input type="tel" id="organizerContact" name="organizerContact" placeholder="Enter the OrganizerContact"
-                    maxlength="10">
+                <label for="organizer-contact">Organizer Contact</label><br>
+                <input type="tel" id="organizer-contact" name="organizer_contact"
+                    placeholder="Enter the organizer contact" maxlength="10" value="9787645518">
             </div><br>
             <div>
-                <label for="ticketPrice">Ticket Price</label><br>
-                <input type="radio" name="ticketPrice" id="ticketPrice" value="1000">
-                <label for="ticketPrice">1000 1st Class</label><br>
-                <input type="radio" name="ticketPrice" id="ticketPrice" value="750">
-                <label for="ticketPrice">750 2nd Class</label><br>
-                <input type="radio" name="ticketPrice" id="ticketPrice" value="500">
-                <label for="ticketPrice">500 3rd Class</label><br>
-                <input type="radio" name="ticketPrice" id="ticketPrice" value="250">
-                <label for="ticketPrice">250 Normal</label><br>
+                <label for="ticket-price">Ticket Price</label><br>
+                <input type="number" name="ticket-price" id="ticket_price" placeholder="Enter the ticket price"
+                    value="750">
             </div><br>
             <div>
-                <label for="eventType">Event Type</label><br>
-                <select name="eventType" id="eventType">
+                <label for="event-type">Event Type</label><br>
+                <select id="event-type" name="event_type">
                     <option value="Festivals">Festivals</option>
-                    <option value="Corporate Events">Corporate Events</option>
+                    <option value="Corporate">Corporate Events</option>
                     <option value="Parties">Parties</option>
                 </select>
             </div><br>
             <div>
-                <label for="maximumAttendees">Maximum Attendees</label><br>
-                <input type="number" id="maximumAttendees" name="maximumAttendees" min="1" max="100">
+                <label for="maximum-attendees">Maximum Attendees</label><br>
+                <select id="maximum-attendees" name="maximum_attendees">
+                    <option value="One">One</option>
+                    <option value="Two">Two</option>
+                    <option value="Three">Three</option>
+                </select>
             </div><br>
             <div>
-                <label for="eventWebsite">Event Website</label><br>
-                <input type="url" id="eventWebsite" name="eventWebsite">
+                <label for="event-website">Event Website</label><br>
+                <input type="url" id="event-website" name="event_website" placeholder="Enter the event website url"
+                    value="file:///C:/xampp/htdocs/html/Form/index.html">
             </div><br>
             <div>
-                <label for="eventImageURL">Event Image URL's</label><br>
-                <a href="###"><img src="###" alt="FestivalEvent images"></a><br>
-                <a href="###"><img src="###" alt="CorporateEvent images "></a><br>
-                <a href="###"><img src="###" alt="Parties images"></a>
+                <label for="event-imageurl">Event Image URL's</label><br>
+                <input type="url" id="event-imageurl" name="event_imageurl" placeholder="Enter the maximum attendees"
+                    value="file:///C:/xampp/htdocs/html/Form/index.html">
             </div><br>
             <div>
-                <label for="eventTags">Event Tags</label><br>
-                <select name="eventTags" id="eventTags">
+                <label for="event-tags">Event Tags</label><br>
+                <select name="event-tags" id="event_tags">
                     <option value="Dancing">Dancing</option>
                     <option value="Singing">Singing</option>
                     <option value="Music">Music</option>
                 </select>
             </div><br>
             <div>
-                <input type="submit" value="Update">
+                <button type="submit">update</button>
             </div>
         </form>
     </div>
