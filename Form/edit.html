@@ -11,7 +11,7 @@
     <div>
         <h3>Edit Event</h3>
         <a href="index.html">Back</a><br><br>
-        <form action="/update.html" method="get">
+        <form action="/update.html" method="post">
             <div>
                 <label for="event-name">Event Name</label><br>
                 <input type="text" id="event-name" name="event_name" placeholder="Enter the event name"
@@ -43,7 +43,8 @@
             <div>
                 <label for="event-type">Event Type</label><br>
                 <select id="event-type" name="event_type">
-                    <option value="Festivals">Festivals</option>
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="Festivals" selected>Festivals</option>
                     <option value="Corporate">Corporate Events</option>
                     <option value="Parties">Parties</option>
                 </select>
@@ -51,7 +52,8 @@
             <div>
                 <label for="maximum-attendees">Maximum Attendees</label><br>
                 <select id="maximum-attendees" name="maximum_attendees">
-                    <option value="One">One</option>
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="One" selected>One</option>
                     <option value="Two">Two</option>
                     <option value="Three">Three</option>
                 </select>
@@ -68,14 +70,15 @@
             </div><br>
             <div>
                 <label for="event-tags">Event Tags</label><br>
-                <select name="event-tags" id="event_tags">
-                    <option value="Dancing">Dancing</option>
+                <select id="event-tags" name="event_tags">
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="Dancing" selected>Dancing</option>
                     <option value="Singing">Singing</option>
                     <option value="Music">Music</option>
                 </select>
             </div><br>
             <div>
-                <button type="submit">update</button>
+                <button type="submit">Update</button>
             </div>
         </form>
     </div>
